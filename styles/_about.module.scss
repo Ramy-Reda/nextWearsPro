@@ -1,0 +1,103 @@
+.write{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: left;
+}
+
+.custom{
+    background-color: #dedbdb;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        & .icon{
+            font: {
+                size: 42px;
+                weight: 700;
+            };
+            color:#fd2222;
+        }
+
+        & pre{
+            width: 70%;
+            white-space: normal;
+        }
+        & p{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+
+            & img{
+                border-radius: 50%;
+            }
+
+            & p{
+                font: {
+                    size: 15px;
+                    weight: 600;
+                };
+                & span:nth-child(2){
+                    color: #888;
+                }
+            }
+        }
+    }
+
+    .sea{
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.stat{
+    background: #fff;
+    & ul{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+.ourTeam{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    & .box{
+        
+        & .wordes{
+            text-align: left;
+            width: 81%;
+            font-size: 20px;
+            font-weight: 600;
+            margin-left: 31px;
+            margin-top: 5px;
+            & .name{
+                margin-left: 10px;
+            }
+
+            & .jops{
+                margin-left: 10px;
+                color: #b8b7b7;
+            }
+        }
+    }
+}
+
+.cleints{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 90px;
+    margin: {
+        top: 20px;
+        bottom: 20px;
+    };
+}

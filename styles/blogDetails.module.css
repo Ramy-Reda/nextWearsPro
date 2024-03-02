@@ -1,0 +1,151 @@
+.container_fluid {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 70%;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+.start{
+    background: #dddbdb;
+    margin-top:47px;
+    padding: 65px
+}
+
+.start h2{
+    font-size: 35px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.start ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start ul li {
+    margin: 20px;
+}
+
+.writer{
+    font-size: 20px;
+    font-weight: 600;
+    text-align:left
+}
+
+.writer .box{
+    width: 70%;
+    margin: 50px auto;
+    background: #dddbdb;
+    padding: 50px 25px;
+    position: relative;
+}
+
+.writer .box span{
+    display: block;
+    color: rgb(211, 68, 68);
+    margin: 15px;
+    text-align: left;
+}
+.writer .box::before{
+    content: "“";
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -26px;
+    font-size: 55px;
+    color: white;
+}
+
+.picts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.picts .pict{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.picts .pict img{
+    border-radius: 50%;
+    margin-right:39px ;
+}
+
+.picts .pict p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.word span{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.rev{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.rev .box{
+    border: 1px solid #ccc;
+    padding: 20px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.rev .box span{
+    font-size: 01rem;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.Leave h1{
+    width: 100%;
+    margin: 50px auto;
+}
+
+.Leave input{
+    display: inline-block;
+    margin-right: 20px;
+    width: 258px;
+    height: 35px;
+    padding: 14px;
+    font-size: 0.8rem;
+}
+
+.Leave textarea{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.Leave button{
+    padding: 15px 36px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 13px;
+    margin-bottom: 40px;
+}

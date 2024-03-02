@@ -1,0 +1,128 @@
+%flexCnter{
+    display: flex;
+    align-items: center;
+}
+
+%positions { 
+    position: absolute;
+    top: 7%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.plus{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font: {
+        size:15px;
+        weight: 600;
+    }
+
+    & select {
+        border: none;
+        background: transparent;
+        font: {
+            size:15px;
+            weight: 600;
+        };
+        outline: none;
+    }
+}
+
+.back {
+    margin-top: 100px;
+    width: 100%;
+    height: 150px;
+    background: #f3f2ee;
+    display: flex;
+    align-items: center;
+    & p{
+        display: flex;
+        align-items: center;
+        justify-content:flex-start
+    }
+    & h4{
+        display: flex;
+        align-items: center;
+        justify-content:flex-start
+    }
+}
+
+.rowShop{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+
+    & .left{
+        @extend %flexCnter;
+        flex-direction: column;
+        text-align: left;
+        overflow-y: scroll;
+        height: 400px;
+            &::-webkit-scrollbar {
+                width: 15px;
+            }
+
+            &::-webkit-scrollbar-track{
+                box-shadow: inset 0px 0px 5px gray;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb{
+                background: red;
+                border-radius: 10px;
+            }
+
+        & input{
+            width: 90%;
+            border: 1px solid #777;
+            color: #777;
+            height: 35px;
+            font: {
+                size: 18px;
+                weight: 700;
+            };
+            padding: 10px 20px;
+        }
+
+        & .catigory{
+            width: 90%;
+            
+
+            & .box {
+                margin-top : 10px;
+                & details {
+                    &:not(last-child) {
+                        margin-bottom: 40px;
+                    }
+                    & summary {
+                        cursor: pointer;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+                & ul{
+                    list-style: none;
+                    color: #999;line-height: 25px;
+                    & li:hover {
+                        color : #333;
+                    }
+                    & li{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    // & .right{
+    // }
+}
+
+
+.heighter {
+    height: 0px;
+}

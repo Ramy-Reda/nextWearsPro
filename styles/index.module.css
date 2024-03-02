@@ -1,0 +1,1195 @@
+.rowNav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.2);
+  margin-top: -5px;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000000000000020;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 46%;
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px;
+  border-radius: 5px;
+  transition: all 0.7s;
+  height: 209px;
+  z-index: 1000000000000000300000000;
+}
+.hide a {
+  display: block;
+  height: 35px;
+  padding: 7px 6px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.links {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.shop {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.page {
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.drag {
+  display: block;
+  opacity: 1;
+}
+
+.menus {
+  display: none;
+}
+
+@media (max-width: 1190px) {
+  .rowNav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rowNav .shop {
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .rowNav .links {
+    background: #fff;
+    position: absolute;
+    top: 67px;
+    right: -35%;
+    display: block;
+    width: 35%;
+    text-align: right;
+    transition: all 0.8s;
+  }
+  .rowNav .links a {
+    display: block;
+    padding: 10px 18px;
+  }
+  .page {
+    padding: 10px 18px;
+  }
+  .hide {
+    top: 50%;
+    right: 20%;
+  }
+  .menus {
+    position: relative;
+    display: inline-block;
+  }
+  .menus .show {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .menus .hides {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links, .shop {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.res .left, .res .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 555;
+}
+
+.information .relatedpro .ralatedmarket .box .under .hover pre, .information .relatedpro .ralatedmarket .box .under .hover p, .marketing .box .under .hover pre, .marketing .box .under .hover p {
+  position: absolute;
+  left: 0;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.res {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 48px;
+}
+.res .box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.res .box .img {
+  transform: scale(1.3);
+  position: absolute;
+  top: 0;
+  right: -100px;
+  z-index: -1;
+}
+.res .box .text {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+  transition: all 2s;
+}
+.res .box .text .clr {
+  color: red;
+}
+.res .box .text .lorem {
+  width: 30%;
+  font-size: 18p;
+  font-weight: 500;
+}
+.res .box .text h1 {
+  width: 50%;
+}
+.res .box .btn {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+}
+.res .right {
+  right: 4%;
+}
+.res .left {
+  left: 4%;
+}
+
+.active {
+  z-index: 1;
+}
+
+.activeText {
+  z-index: 1;
+  margin-top: 80px;
+}
+
+.disapald {
+  cursor: no-drop;
+  opacity: 0.4;
+}
+
+.hovercol {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+.hovercol::after {
+  content: "";
+  width: 10%;
+  height: 1.5px;
+  background: #222;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: all 0.5s;
+}
+.hovercol:hover::after {
+  width: 20%;
+  background: rgb(252, 64, 64);
+}
+
+.clothing {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 200px;
+  margin-top: 30px;
+}
+.clothing .txtclo {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+}
+
+.shoes {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 200px;
+  margin-top: -30px;
+}
+.shoes .txtsho {
+  position: absolute;
+  top: 50%;
+  left: -11%;
+}
+.shoes .txtsho h1 {
+  width: 77%;
+}
+
+.acces {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+  margin-top: -320px;
+}
+.acces .txtacc {
+  position: absolute;
+  top: 47%;
+  left: 56%;
+}
+
+.listed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e3e1e1;
+}
+.listed ul {
+  list-style: none;
+  float: right;
+}
+.listed ul li {
+  float: left;
+  margin-right: 100px;
+  color: #777;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: Arial;
+  cursor: pointer;
+}
+.listed ul li.active {
+  color: black;
+}
+
+.marketing {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  text-align: center;
+  transition: all 0.7s;
+}
+.marketing .box {
+  transition: all 0.5s;
+  position: relative;
+  transition: all 0.7s;
+}
+.marketing .box:hover .right {
+  right: 60px;
+  opacity: 1;
+  display: flex;
+}
+.marketing .box .right {
+  flex-direction: column;
+  position: absolute;
+  top: 44px;
+  right: 0;
+  opacity: 0;
+  display: none;
+  transition: all 0.7s;
+}
+.marketing .box .right i {
+  margin-top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  background: rgb(250, 250, 250);
+}
+.marketing .box .under {
+  position: relative;
+  text-align: left;
+  margin-left: 45px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.marketing .box .under:hover .colors p {
+  opacity: 1;
+}
+.marketing .box .under .hover {
+  position: relative;
+  width: 192px;
+  height: 55px;
+}
+.marketing .box .under .hover p {
+  bottom: 30px;
+  left: -8px;
+  opacity: 0;
+  color: rgb(252, 102, 102);
+  transition: all 0.5s;
+}
+.marketing .box .under .hover pre {
+  bottom: 0px;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.marketing .box .under .hover:hover p {
+  bottom: 0;
+  opacity: 1;
+}
+.marketing .box .under .hover:hover pre {
+  opacity: 0;
+}
+.marketing .box .under .colors {
+  height: 39px;
+  position: absolute;
+  bottom: 0;
+  right: 45px;
+}
+.marketing .box .under .colors p {
+  cursor: pointer;
+  background: black;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.marketing .box .under .colors p:nth-child(1) {
+  background: #5e64d1;
+}
+.marketing .box .under .colors p:nth-child(2) {
+  background: #404a47;
+}
+.marketing .box .under .colors p:nth-child(3) {
+  background: #d5a667;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  max-width: 100%;
+  background: #f3f2ee;
+  padding: 50px 40px;
+  position: relative;
+}
+.timer .disc {
+  position: relative;
+  left: -29px;
+}
+.timer .disc .pos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.timer .disc::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  transform: translateY(-50%);
+  background: white;
+  width: 300px;
+  height: 300px;
+}
+.timer .clock p {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f81717;
+}
+.timer .clock .time {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 700;
+}
+.timer .pho {
+  position: relative;
+}
+.timer .pho p {
+  position: absolute;
+  top: -41px;
+  right: 19px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  text-align: center;
+}
+.timer .pho p span {
+  text-align: center;
+  display: block;
+  line-height: 46px;
+}
+.timer .pho p span:nth-child(2) {
+  font-weight: bold;
+}
+
+.insta {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+.insta .photo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.insta .instaText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.insta .instaText p {
+  font-size: 15px;
+  font-weight: 600;
+}
+.insta .instaText pre {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(248, 33, 33);
+}
+
+.header p {
+  color: rgb(252, 64, 64);
+  font-size: 1.3rem;
+}
+
+.fashion {
+  margin: 0 auto 120px auto;
+  max-width: 90%;
+}
+.fashion .blog {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.fashion .blog .box {
+  position: relative;
+  text-align: center;
+  margin-bottom: 120px;
+}
+.fashion .blog .box .boxHover {
+  width: 80%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
+.fashion .blog .box .boxHover p {
+  font-size: 12px;
+  color: #555;
+}
+.fashion .blog .box .boxHover h2 {
+  text-align: left;
+  padding: 3px 13px;
+}
+.fashion .blog .box .boxHover .btn {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+}
+.fashion .blog .box .boxHover .btn::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #750202;
+  position: absolute;
+  bottom: -3px;
+  left: 14px;
+  transition: all 0.7s;
+}
+.fashion .blog .box .boxHover .btn:hover::after {
+  width: 97%;
+}
+
+@media (max-width: 1200px) {
+  .res .box .img {
+    transform: scale(1);
+    left: -58%;
+  }
+  .res .box .text {
+    left: 10%;
+  }
+  .res .box .text .lorem {
+    width: 50%;
+  }
+  .colection .clothing {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .colection .clothing .txtclo {
+    position: absolute;
+    top: 94%;
+    left: 18%;
+  }
+  .colection .clothing .txtclo h1 {
+    width: 100%;
+  }
+  .colection .clothing .img {
+    display: block;
+  }
+  .colection .shoes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+  }
+  .colection .shoes .txtsho {
+    position: absolute;
+    top: 94%;
+    left: 16%;
+  }
+  .colection .shoes .txtsho h1 {
+    width: 100%;
+  }
+  .colection .shoes .img {
+    display: block;
+  }
+  .colection .acces {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 116px auto;
+  }
+  .colection .acces .txtacc {
+    position: absolute;
+    top: 94%;
+    left: 15%;
+  }
+  .colection .acces .img {
+    display: block;
+  }
+  .marketing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .timer {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .timer .pho p {
+    right: 184px;
+  }
+  .timer .disc .pos {
+    left: 27%;
+  }
+  .insta {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -14%;
+  }
+  .insta .instaText p {
+    max-width: 80%;
+  }
+  .fashion .blog {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.btn {
+  display: block;
+  border: none;
+  padding: 7px 15px;
+  margin: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.btn font {
+  size: 20px;
+  weight: bold;
+}
+
+.btn_black {
+  background: rgb(24, 23, 23);
+  color: #fff;
+}
+
+.foot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: black;
+  color: white;
+  text-align: left;
+}
+.foot .me {
+  margin-left: 20px;
+}
+.foot .me p {
+  width: 70%;
+}
+.foot .FootShoping {
+  display: flex;
+  flex-direction: column;
+}
+.foot .newLetter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.foot .newLetter p {
+  width: 70%;
+}
+.foot .newLetter input {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #444;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 17px 0;
+  outline: none;
+  color: #fff;
+}
+.foot .break {
+  margin: 30px 50%;
+  width: 180%;
+  display: block;
+  height: 2px;
+  background: #444;
+}
+.foot .finish {
+  width: 170%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -49%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.rowShop .left {
+  display: flex;
+  align-items: center;
+}
+
+.plus {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: 600;
+}
+.plus select {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+}
+
+.back {
+  margin-top: 100px;
+  width: 100%;
+  height: 150px;
+  background: #f3f2ee;
+  display: flex;
+  align-items: center;
+}
+.back p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.back h4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rowShop {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+.rowShop .left {
+  flex-direction: column;
+  text-align: left;
+  overflow-y: scroll;
+  height: 400px;
+}
+.rowShop .left::-webkit-scrollbar {
+  width: 15px;
+}
+.rowShop .left::-webkit-scrollbar-track {
+  box-shadow: inset 0px 0px 5px gray;
+  border-radius: 10px;
+}
+.rowShop .left::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+.rowShop .left input {
+  width: 90%;
+  border: 1px solid #777;
+  color: #777;
+  height: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+.rowShop .left .catigory {
+  width: 90%;
+}
+.rowShop .left .catigory .box {
+  margin-top: 10px;
+}
+.rowShop .left .catigory .box details:not(last-child) {
+  margin-bottom: 40px;
+}
+.rowShop .left .catigory .box details summary {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+.rowShop .left .catigory .box ul {
+  list-style: none;
+  color: #999;
+  line-height: 25px;
+}
+.rowShop .left .catigory .box ul li:hover {
+  color: #333;
+}
+.rowShop .left .catigory .box ul li {
+  cursor: pointer;
+}
+
+.heighter {
+  height: 0px;
+}
+
+.teamBlog {
+  background: url("../public/img/blog/blog-4.jpg") no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  font-size: 54px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.write {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: left;
+}
+
+.custom {
+  background-color: #dedbdb;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.custom .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.custom .text .icon {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fd2222;
+}
+.custom .text pre {
+  width: 70%;
+  white-space: normal;
+}
+.custom .text p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.custom .text p img {
+  border-radius: 50%;
+}
+.custom .text p p {
+  font-size: 15px;
+  font-weight: 600;
+}
+.custom .text p p span:nth-child(2) {
+  color: #888;
+}
+.custom .sea img {
+  width: 100%;
+  height: 100%;
+}
+
+.stat {
+  background: #fff;
+}
+.stat ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.ourTeam {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.ourTeam .box .wordes {
+  text-align: left;
+  width: 81%;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 31px;
+  margin-top: 5px;
+}
+.ourTeam .box .wordes .name {
+  margin-left: 10px;
+}
+.ourTeam .box .wordes .jops {
+  margin-left: 10px;
+  color: #b8b7b7;
+}
+
+.cleints {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 90px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.information .relatedpro .ralatedmarket .box .under .hover pre, .information .relatedpro .ralatedmarket .box .under .hover p, .marketing .box .under .hover p, .marketing .box .under .hover pre {
+  position: absolute;
+  left: 0;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.rowdetails {
+  width: 90%;
+}
+.rowdetails .backShop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  font-weight: bold;
+}
+.rowdetails .slideDetails {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 30px;
+}
+.rowdetails .slideDetails .leftDetails .box {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 8px auto;
+}
+.rowdetails .rigthDetails {
+  position: relative;
+}
+.rowdetails .rigthDetails .boxS {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  opacity: 0;
+}
+.rowdetails .rigthDetails .boxS img {
+  width: 90%;
+  height: 90%;
+}
+
+.activeImage {
+  border: 0.7px solid rgb(250, 48, 48);
+}
+
+.rowdetails .rigthDetails .boxS.activeslider {
+  opacity: 1;
+}
+
+.information {
+  width: 80%;
+  margin: 20px auto;
+}
+.information .salary .yes {
+  display: inline;
+}
+.information .salary .no {
+  display: inline;
+  color: #777;
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+.information .choose {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+.information .choose .size {
+  margin-bottom: 25px;
+}
+.information .choose .size span {
+  margin-left: 30px;
+  border: 0.5px solid #333;
+  padding: 5px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.information .choose .color p {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 15px;
+  border: 0.5px solid #fff;
+}
+.information .choose input {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.information .choose button {
+  border: none;
+  background: #111;
+  color: #fff;
+  width: 205px;
+  height: 40px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.information .choose .addes {
+  margin-top: 40px;
+}
+.information .choose .addes span {
+  cursor: pointer;
+}
+.information .choose .addes pre {
+  display: inline-block;
+}
+.information .info .boxI {
+  font-size: 18px;
+  font-weight: 600;
+}
+.information .info .boxI span:nth-child(1) {
+  color: #767474;
+  margin-right: 10px;
+}
+.information .switch ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #999;
+  cursor: pointer;
+  position: relative;
+}
+.information .switch ul li {
+  float: right;
+}
+.information .switch hr {
+  margin-top: -9px;
+}
+.information .switch ul li:hover, .information .switch ul li.active {
+  background: #b1977e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.information .switch .wordes {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.information .switch .wordes .boxWord {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  display: none;
+}
+.information .switch .wordes .boxWord .all {
+  font-size: 1rem;
+}
+.information .switch .wordes .boxWord .cust {
+  font-size: 1rem;
+}
+.information .switch .wordes .boxWord .Addition {
+  font-size: 1rem;
+}
+.information .switch .wordes .boxWord.activeop {
+  display: block;
+}
+.information .relatedpro .ralatedmarket {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: -100px;
+  margin-bottom: 50px;
+  text-align: center;
+  transition: all 0.7s;
+}
+.information .relatedpro .ralatedmarket .box {
+  transition: all 0.5s;
+  position: relative;
+  transition: all 0.7s;
+}
+.information .relatedpro .ralatedmarket .box:hover .right {
+  right: 60px;
+  opacity: 1;
+  display: flex;
+}
+.information .relatedpro .ralatedmarket .box .right {
+  flex-direction: column;
+  position: absolute;
+  top: 44px;
+  right: 0;
+  opacity: 0;
+  display: none;
+  transition: all 0.7s;
+}
+.information .relatedpro .ralatedmarket .box .right i {
+  margin-top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  background: rgb(250, 250, 250);
+}
+.information .relatedpro .ralatedmarket .box .under {
+  position: relative;
+  text-align: left;
+  margin-left: 45px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.information .relatedpro .ralatedmarket .box .under:hover .colors p {
+  opacity: 1;
+}
+.information .relatedpro .ralatedmarket .box .under .hover {
+  position: relative;
+  width: 192px;
+  height: 55px;
+}
+.information .relatedpro .ralatedmarket .box .under .hover p {
+  bottom: 30px;
+  left: -8px;
+  opacity: 0;
+  color: rgb(252, 102, 102);
+  transition: all 0.5s;
+}
+.information .relatedpro .ralatedmarket .box .under .hover pre {
+  bottom: 0px;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.information .relatedpro .ralatedmarket .box .under .hover:hover p {
+  bottom: 0;
+  opacity: 1;
+}
+.information .relatedpro .ralatedmarket .box .under .hover:hover pre {
+  opacity: 0;
+}
+.information .relatedpro .ralatedmarket .box .under .colors {
+  height: 39px;
+  position: absolute;
+  bottom: 0;
+  right: 45px;
+}
+.information .relatedpro .ralatedmarket .box .under .colors p {
+  cursor: pointer;
+  background: black;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.information .relatedpro .ralatedmarket .box .under .colors p:nth-child(1) {
+  background: #5e64d1;
+}
+.information .relatedpro .ralatedmarket .box .under .colors p:nth-child(2) {
+  background: #404a47;
+}
+.information .relatedpro .ralatedmarket .box .under .colors p:nth-child(3) {
+  background: #d5a667;
+}
+
+.information .choose .size span.active {
+  background-color: #222;
+  color: #fff;
+}
+
+.container_fluid {
+  width: 100%;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}/*# sourceMappingURL=index.module.css.map */

@@ -1,0 +1,59 @@
+.foot{
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: black;
+    color: white;
+    text-align: left;
+
+    & .me {
+        margin-left: 20px;
+        & p{width: 70%;}
+    }
+
+    & .FootShoping{
+        display: flex;
+        flex-direction: column;
+    }
+    & .newLetter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & p{width:70%}
+        & input{
+            width : 80%;
+            border: none;
+            border-bottom: 1px solid #444;
+            background: transparent;
+            font: {
+                size: 20px;
+                weight: 700;
+            };
+            padding: 17px 0;
+            outline: none;
+            color: #fff;
+        }
+    }
+
+    & .break{
+        margin:30px 50%;
+        width: 180%;
+        display: block;
+        height: 2px;
+        background:#444;
+
+    }
+
+    & .finish{
+        width: 170%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: {
+            left: -49%;
+            top: 50px;
+            bottom: 20px;
+        };
+    }
+}

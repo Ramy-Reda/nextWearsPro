@@ -1,0 +1,29 @@
+@import "./nav.module";
+@import "./placeholder.module";
+@import "./home.module";
+@import "./btn.module.scss";
+@import "./footer.modul";
+@import "./shop.module";
+@import "./blog.module";
+@import "./about.module";
+@import "./shopdetails.module";
+@import "./shopCart.module";
+@import "./checkOut.module";
+
+.container_fluid {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+}
+.container {
+    width: 90%;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
